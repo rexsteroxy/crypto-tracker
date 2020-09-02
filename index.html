@@ -10,52 +10,63 @@
 
 <body>
 
-    <div class="card">
-        <div class="card-body">
-            <h4 class="card-title">CRYPTO TRANSACTIONS TRACKER</h4>
 
-
-
-            <div class="card">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Crypto Name</th>
-                            <th>Amount(NGN)</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-
-                    </tbody>
-                </table>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8"> 
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-center">CRYPTO TRANSACTIONS TRACKER</h4>
+            
+            
+            
+                        <div class="card">
+                            <table class="table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Crypto Name</th>
+                                        <th>Amount(NGN)</th>
+                                        <th>Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>bitcoin</td>
+                                        <td>34567</td>
+                                        <td>9/99/00</td>
+                                    </tr>
+            
+                                </tbody>
+                            </table>
+            
+                        </div>
+            
+                        <form style="margin-top: 20px;">
+                            <div class="form-group">
+                                <label for="name">Name of Crypto:</label>
+                                <input type="text" class="form-control" id="nametxt">
+                            </div>
+                            <div class="form-group">
+                                <label for="amt">Amount(NGN):</label>
+                                <input type="number" class="form-control" id="amt">
+                            </div>
+                            <div class="form-group">
+                                <label for="date">Date:</label>
+                                <input type="date" class="form-control" id="date">
+                            </div>
+            
+                            <button type="submit" class="btn btn-primary">Add Transaction</button>
+                        </form>
+                    </div>
+                </div>
+            
             </div>
-
-            <form action="/action_page.php">
-                <div class="form-group">
-                    <label for="name">Name of Crypto:</label>
-                    <input type="text" class="form-control" id="nametxt">
-                </div>
-                <div class="form-group">
-                    <label for="amt">Amount(NGN):</label>
-                    <input type="number" class="form-control" id="amt">
-                </div>
-                <div class="form-group">
-                    <label for="date">Date:</label>
-                    <input type="date" class="form-control" id="date">
-                </div>
-
-                <button type="submit" class="btn btn-primary">Add Transaction</button>
-            </form>
+            <div class="col-md-2"></div>
         </div>
     </div>
 
+   
 
 
 

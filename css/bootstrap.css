@@ -216,7 +216,7 @@ svg {
 }
 
 table {
-  border-collapse: collapse;
+  border:3px;
 }
 
 caption {
