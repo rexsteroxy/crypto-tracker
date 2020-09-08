@@ -3106,6 +3106,14 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
+  
+}
+
+..body{
+margin-left: 10px;
+margin-right: 10px;
+padding: 0px;
+/* background-color: white; */
 }
 
 .btn-danger:hover {
