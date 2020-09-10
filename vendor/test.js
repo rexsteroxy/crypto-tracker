@@ -37,5 +37,5 @@ arrayScript.forEach(function (s) {
 
 val = document.title;
 val = "sunny"
-
+val = document.
 console.log(val);
