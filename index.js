@@ -1,68 +1,61 @@
-// const content = document;
-// const form = content.querySelector('form');
-// const nameOfcrypto = content.getElementById('nametxt');
-// const amount = content.querySelector('#amt');
-// const newDate = content.getElementById('date');
+// get the button elements
+let prev = document.getElementById('prev');
+let next = document.getElementById('next');
 
-// const newCryptoName = content.getElementById('crypto-name');
-// const newCryptAmount = content.getElementById('crypto-amount');
-// const newCryptoDate = content.getElementById('dt');
+// get the card body element
+let card = document.getElementById('bg-card-body');
 
 
+// get and store images in an arrray
+
+let images = [
+    "url(./img/bitcoin3.jpg)",
+    "url(./img/bitcoin4.jpg)",
+    "url(./img/crypto.jpg)",
+    "url(./img/ethereum.jpg)"
+]
+
+// to check mate the image value in the above array
+let count = 0;
 
 
+// add even listener to the selected buttons
 
-// nameOfcrypto.value = '';
-// amount.value = '';
-// newDate.value = '';
+prev.addEventListener("click", previouspage);
 
-
-// getting events from each input
-// nameOfcrypto.addEventListener('keydown', runEvent);
-
-// function runEvent(e) {
-//     newCryptoName.innerText = e.target.value;
-// }
-
-// // getting for amount
-// amount.addEventListener('keyup', amountEvent);
-
-// function amountEvent(e) {
-//     newCryptAmount.innerText = e.target.value;
-// }
-
-
-// Getting the user input from the form
-// form.addEventListener('submit', onClicked);
-
-// function onClicked(e) {
-//     e.preventDefault();
-//     const tableRow = content.createElement('tr');
-//     const tabledata = content.createElement('td');
-//     const input = tableRow.appendChild(tabledata);
-//     input.innerText = nameOfcrypto.value;
-
-//     document.getElementById('table-body').appendChild(input);
-//     newCryptAmount.innerText = amount.value;
-//     newCryptoName.innerText = input.innerText;
-//     newCryptoDate.innerText = newDate.value;
-// }
-
-// creating new elements
+next.addEventListener('click', nextpage);
 
 
 
+// function for previous page
+
+function previouspage(e) {
+    e.preventDefault();
+
+    if (count <= 0) {
+        alert("please click next button")
+    } else {
+        count -= 1;
+        card.style.backgroundImage = images[count];
+    
+    }
 
 
 
-
-const tableRow = document.createElement('tr');
-for (let i = 1; i <= 5; i++) {
-    tableData = document.createElement('td');
-
-    tableRow.appendChild(tableData);
 }
 
-console.log(tableRow);
+//function for next page
 
-const form = document.querySelector('form');
+function nextpage(e) {
+    e.preventDefault();
+ 
+    if (images.length - 1 == count) {
+        alert("No more images to view")
+    } else {
+        count += 1;
+        card.style.backgroundImage = images[count];
+    }
+   
+
+
+}
