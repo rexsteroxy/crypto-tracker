@@ -33,15 +33,15 @@
                                         <th scope="col">Date</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
+                                <tbody id="table-body">
+                                    <!-- <tr id="table-row"> 
 
-                                        <td>Etherium</td>
-                                        <td>2345</td>
-                                        <td>21/9/2018</td>
+                                        <td id="crypto-name"></td>
+                                        <td id="crypto-amount"></td>
+                                        <td id="dt"></td>
                                         <td style="color: rgb(44, 243, 26);">Edit</td>
                                         <td style="color: brown;">Delete</td>
-                                    </tr>
+                                    </tr> -->
 
                                 </tbody>
                             </table>
@@ -55,6 +55,7 @@
                                         <div class="form-group">
                                             <label for="name">Name of Crypto:</label>
                                             <input type="text" class="form-control" id="nametxt">
+
                                         </div>
                                         <div class="form-group">
                                             <label for="amt">Amount(NGN):</label>
@@ -65,7 +66,8 @@
                                             <input type="date" class="form-control" id="date">
                                         </div>
 
-                                        <button type="submit" class="btn btn-primary">Add Transaction</button>
+                                        <button id="submit-button" type="submit" class="btn btn-primary">Add
+                                            Transaction</button>
                                     </form>
 
                                 </div>
@@ -86,7 +88,8 @@
 
 
 
-
+    <!-- JavaScript for the page -->
+    <script src="index.js"></script>
 </body>
 
 </html>
