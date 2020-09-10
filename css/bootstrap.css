@@ -5279,6 +5279,11 @@ input[type="button"].btn-block {
 
 .card-title {
   margin-bottom: 0.75rem;
+  border-color: gold;
+  color: rgb(241, 200, 13);
+  font-size: 40px;
+  text-shadow: var(--yellow);
+
 }
 
 .card-subtitle {
