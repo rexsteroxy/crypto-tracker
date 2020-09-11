@@ -49,11 +49,40 @@ title.style.padding = "24px";
 title.style.color = "white";
 title.style.background = "green";
 title.style.textAlign = "center";
-//title.style.display = "initial";
+title.style.display = "initial";
 
 
-console.log(document.getElementById("title").id);
+// console.log(document.getElementById("title").id);
 
-console.log(document.getElementById("title").className);
-console.log(document.getElementById("title").innerText);
+// console.log(document.getElementById("title").className);
+// console.log(document.getElementById("title").innerText);
 
+
+let button = document.getElementById("click");
+let input = document.getElementById('input');
+
+button.addEventListener('click', function (e) {
+
+e.preventDefault(); 
+
+    title.innerText = "SUNNY GO AND BUY YEARN.FINNANCE";
+    title.style.margin = "20px";
+    title.style.padding = "24px";
+    title.style.color = "white";
+    title.style.background = "blue";
+    title.style.textAlign = "center";
+    title.style.display = "initial";
+
+
+
+
+});
+
+
+input.addEventListener('keyup', (e)=>{
+e.preventDefault();
+
+title.innerText = e.target.value;
+
+
+})
