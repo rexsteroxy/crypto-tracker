@@ -1,6 +1,15 @@
 (function () {
 
 
+//registration of service worker
+if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('serviceWorker.js')
+    .then(function(){
+      console.log('SW registered');
+    });
+  }
+
+
     // geting the table body
     let tableBody = document.getElementById('table-body');
     let form = document.querySelector('form');
