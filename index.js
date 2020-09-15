@@ -1,6 +1,15 @@
 (function () {
 
 
+//registration of service worker
+if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('serviceWorker.js')
+    .then(function(){
+      console.log('SW registered');
+    });
+  }
+
+
     // geting the table body
     let tableBody = document.getElementById('table-body');
     let form = document.querySelector('form');
@@ -41,13 +50,18 @@
             let tableData1 = document.createElement('td');
             let tableData2 = document.createElement('td');
             let tableData3 = document.createElement('td');
-            tableData1.innerText = cryptoName.value;
             tableData2.innerText = cryptoAmount.value;
             tableData3.innerText = transactionDate.value;
+            tableData1.innerText = cryptoName.value;
             tableRow.appendChild(tableData1);
             tableRow.appendChild(tableData2);
             tableRow.appendChild(tableData3);
             tableBody.appendChild(tableRow);
+
+            cryptoAmount.value = '';
+            transactionDate.value = '';
+            cryptoName.value = '';
+
 
         }
 

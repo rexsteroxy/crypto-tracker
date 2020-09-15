@@ -1,0 +1,32 @@
+{
+    "name": "Crypto Tracker",
+    "short_name": "Crypto Tracker",
+    "start_url": ".",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color":"rgb(0, 255, 98)",
+    "theme_color": "#ccc",
+    "icons": [
+        {
+            "src": "img/icon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+
+}
