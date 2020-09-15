@@ -32,7 +32,8 @@
                                         <th scope="col">Amount NGN</th>
                                         <th scope="col">Date</th>
                                         <th scope="col"></th>
-                                        <th scope="col">Date</th>
+                                        <th scope="col"></th>
+                                        
                                     </tr>
                                 </thead>
                                 <tbody id="table-body">
@@ -55,17 +56,14 @@
                                 <div class="col-md-8">
                                     <form style="margin-top: 20px;">
                                         <div class="form-group">
-                                            <label for="name">Name of Crypto:</label>
-                                            <input type="text" class="form-control" id="nametxt">
+                                            <input type="text" class="form-control" id="nametxt" placeholder="Name of Crypto">
 
                                         </div>
-                                        <div class="form-group">
-                                            <label for="amt">Amount(NGN):</label>
-                                            <input type="number" class="form-control" id="amt">
+                                        <div class="form-group">                                            
+                                            <input type="number" class="form-control" id="amt" placeholder="Amount(NGN)">
                                         </div>
-                                        <div class="form-group">
-                                            <label for="date">Date:</label>
-                                            <input type="date" class="form-control" id="dt">
+                                        <div class="form-group">                                            
+                                            <input type="date" class="form-control" id="dt" placeholder="Date:">
                                         </div>
 
                                         <button id="submit-button" type="submit" class="btn btn-primary">Add
